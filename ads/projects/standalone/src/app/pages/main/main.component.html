@@ -1,0 +1,18 @@
+<p>main works!</p>
+<a routerLink="/lk">lk</a>
+<br />
+<a routerLink="/reg">reg</a>
+<br />
+<a routerLink="/ads">ads</a>
+<br />
+<a routerLink="/ads/123">ads 123</a>
+<br />
+<a routerLink="/ads1">ads1</a>
+<br />
+<a routerLink="/ads1/123">ads1 123</a>
+
+<div *ngFor="let item of data">
+  <p>{{ item.name }}</p>
+  <p>{{ item.createdAt | date : "medium" }}</p>
+  <p>{{ item.createdAt | datetime }}</p>
+</div>

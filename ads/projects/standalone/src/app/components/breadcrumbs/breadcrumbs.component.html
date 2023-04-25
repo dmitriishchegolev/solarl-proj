@@ -1,0 +1,7 @@
+<ng-container *ngFor="let breadCrumbsItem of breadCrumbsItems; let last = last">
+  <a *ngIf="!last" [routerLink]="breadCrumbsItem.url">{{
+    breadCrumbsItem.label
+  }}</a>
+  <span *ngIf="last">{{ breadCrumbsItem.label }}</span>
+  <span *ngIf="!last">></span>
+</ng-container>
